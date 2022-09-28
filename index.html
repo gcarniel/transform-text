@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <textarea
+        data-js="text-converter"
+        placeholder="Digite ou cole seu texto aqui"
+        name="texto"
+        cols="40"
+        rows="3"
+      ></textarea>
+
+      <div class="replacer">
+        <input
+          data-js="input-replace-from"
+          type="text"
+          name="replace"
+          placeholder="Substituir isso"
+        />
+        <input
+          data-js="input-replace-to"
+          type="text"
+          name="replace"
+          placeholder="por isso"
+        />
+        <input data-js="btn-replace" type="button" value="Substituir" />
+      </div>
+
+      <div class="buttons">
+        <div class="flex m-b-8">
+          <input data-js="btn-upper-case" type="button" value="Maiúscula" />
+          <input
+            data-js="btn-capitalize-case"
+            type="button"
+            value="Primeira Maiúscula"
+          />
+          <input
+            data-js="btn-capitalize-case2"
+            type="button"
+            value="Primeiras Maiúscula"
+          />
+          <input data-js="btn-lower-case" type="button" value="Minúscula" />
+        </div>
+        <div class="flex">
+          <input data-js="btn-pascal-case" type="button" value="PascalCase" />
+          <input data-js="btn-camel-case" type="button" value="camelCase" />
+          <input data-js="btn-dashed-case" type="button" value="dashed-case" />
+        </div>
+      </div>
+
+      <div class="result">
+        <span>Resultado: </span><span class="conversion"></span><br />
+        <span>Tamanho: </span><span class="length"></span>
+      </div>
+
+      <span class="message hide"
+        >Resultado copiado para área de transferência.</span
+      >
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "name": "Transform Text",
+  "description": "Extensão para converter textos.",
+  "author": "GCarniel",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Transform Text",
+    "default_icon": {
+      "16": "icon-16.png",
+      "24": "icon-24.png",
+      "32": "icon-32.png"
+    }
+  },
+  "devtools_page": "devtools/devtools.html"
+}
