@@ -49,6 +49,7 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 0.5rem;
 }
 
 input[type='button'] {
@@ -64,6 +65,7 @@ input[type='button'] {
 }
 
 input[type='button']:hover {
+  transition: 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
   background-color: var(--color-background);
   color: var(--color-border);
   cursor: pointer;
